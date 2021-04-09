@@ -45,7 +45,7 @@
     <section class="hero overlay">
         <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="button-order" type="button">Заказать услугу</button>
+            <button data-modal-open class="button-order" type="button">Заказать услугу</button>
         </div>
         
     </section>
@@ -90,9 +90,21 @@
        <div class="container">
            <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="list doing-list">
-        <li class="doing-item"><img src="./images/box1.jpg" alt="Процесс создания сайта" width="370" /></li>
-        <li class="doing-item"><img src="./images/box2.jpg" alt="Оптимизация сайта под мобильный телефон" width="370" /></li>
-        <li class="doing-item"><img src="./images/box3.jpg" alt="Выбор цвета на планшете" width="370" /></li>
+        <li class="doing-item"><img  src="./images/box1.jpg" alt="Процесс создания сайта" width="370" />
+        <div class="doing-text-box">
+            <p class="doing-text">десктопные приложения</p>
+        </div>
+        </li>
+        <li class="doing-item"><img src="./images/box2.jpg" alt="Оптимизация сайта под мобильный телефон" width="370" />
+        <div class="doing-text-box">
+            <p class="doing-text">мобильные приложения</p>
+        </div>
+        </li>
+        <li class="doing-item"><img src="./images/box3.jpg" alt="Выбор цвета на планшете" width="370" />
+        <div class="doing-text-box">
+            <p class="doing-text">дизайнерские решения</p>
+        </div>
+        </li>
     </ul>
 </div>
     </section>
@@ -358,5 +370,13 @@
     
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="button-close"> 
+           <span class="close">&#10005;</span> 
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
